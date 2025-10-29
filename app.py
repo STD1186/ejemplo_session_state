@@ -1,10 +1,10 @@
 import streamlit as st
 st.title("ejmplo para usar session_state")
 
-if "key" not in st.session_state:
+if "count" not in st.session_state:
   st.session_state["key"] = "value"
 
-count = 0
+#count = 0
 
 increment = st.button("increment")
 if increment:
