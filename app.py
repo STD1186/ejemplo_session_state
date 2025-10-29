@@ -7,7 +7,7 @@ if 'count' not in st.session_state:
 if st.button('click me'):
   st.session_state['count'] += 1
 
-nombre = st.text_imput("escribe tu nombre")
-st.write(nombre)
+if 'name' not in st.session_state:
+  st.session_state['name'] = ''
 
 st.write(st.session_state)
